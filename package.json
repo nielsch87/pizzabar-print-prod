@@ -1,0 +1,21 @@
+{
+  "name": "node-printer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "print.js",
+  "scripts": {
+    "start": "node print.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-thermal-printer": "^4.1.2",
+    "socket.io": "^3.1.1",
+    "winston": "^3.3.3",
+    "winston-papertrail-transport": "^1.0.9"
+  },
+  "pkg": {
+    "assets": "assets/**/*"
+  }
+}
