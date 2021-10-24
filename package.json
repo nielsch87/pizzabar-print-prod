@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "print.js",
-  "engines": {
-    "node": "=10.22.0"
-  },
   "scripts": {
-    "start": "node print.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node print.js",
+    "dev": "nodemon print.js",
+    "start:prod": "node dist/print.js",
+    "build": "node build.js && copy package.json dist"
   },
   "keywords": [],
   "author": "",
@@ -16,12 +17,13 @@
     "@node-minify/core": "^6.2.0",
     "@node-minify/uglify-es": "^6.2.0",
     "dotenv": "^10.0.0",
-    "escpos": "^2.5.2",
-    "escpos-bluetooth": "^3.0.0-alpha.2",
     "node-thermal-printer": "^4.1.2",
     "socket.io": "^3.1.1",
     "winston": "^3.3.3",
     "winston-papertrail-transport": "^1.0.9"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   },
   "pkg": {
     "assets": "assets/**/*"
